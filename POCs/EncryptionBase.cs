@@ -14,7 +14,7 @@ namespace EncryptionModule
     {
         #region Configuration
 
-        protected virtual Configuration GetConfiguration()
+        protected virtual Configuration GetConfiguration() 
         {
             return Configuration.Standard;
         }
