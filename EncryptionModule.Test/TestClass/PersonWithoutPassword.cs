@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace EncryptionModule.Test.TestClass
 {
-    internal class PersonWithoutPassword
+    public class PersonWithoutPassword : Person
     {
+        protected override Configuration GetConfiguration()
+        {
+            Configuration config = base.GetConfiguration();
+            config.PassPhrase = string.Empty;
+
+            return config;
+        }
     }
 }

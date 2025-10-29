@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace EncryptionModule.Test
 {
-    internal class ConfigTest
+    public class ConfigTest
     {
+        [Fact]
+        public void ConfigTestSuccess()
+        {
+            // Arrange
+            string testPass = "Test123";
+            Configuration config;
+
+            // Act
+            config = Configuration.WithPassword(testPass);
+
+            // Assert
+            Assert.Equals(testPass, config.PassPhrase);
+            Assert.IsNotNull(config);
+        }
     }
 }

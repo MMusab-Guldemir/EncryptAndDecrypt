@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace EncryptionModule.Test.TestClass
 {
-    internal class PersonWithoutProperties
+    class PersonWithoutProperties : EntityBase
     {
+        public PersonWithoutProperties()
+        { }
+
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }
