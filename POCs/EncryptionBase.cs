@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EncryptionModule
 {
-    public class Encryption
+    public class EncryptionBase
     {
     }
 }
