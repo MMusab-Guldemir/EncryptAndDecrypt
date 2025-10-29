@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EncryptionModule
 {
-    internal class Encryption
+    public class Encryption
     {
     }
 }
