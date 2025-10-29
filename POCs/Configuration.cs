@@ -15,7 +15,7 @@ namespace EncryptionModule
 
 
         public Configuration(string passPhrase, int keySize, int blockSize, int derivationIterations)
-        {
+        { 
             PassPhrase = passPhrase;
             KeySize = keySize;
             BlockSize = blockSize;
