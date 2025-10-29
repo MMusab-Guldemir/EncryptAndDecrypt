@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace EncryptionModule.Exceptions
 {
-    internal class NoPropertiesException
+    public class NoPropertiesException : Exception
     {
+        public NoPropertiesException()
+        {
+            
+        }
+
+        public NoPropertiesException(string message)
+            : base(message)
+        {
+        }
+
+        public NoPropertiesException(string message, Exception inner)
+            : base(message, inner)
+        {
+        }
     }
 }
