@@ -11,7 +11,7 @@ namespace EncryptionModule
 {
     public abstract class EntityBase : EncryptionBase
     {
-        protected List<string> protectedValues;
+        protected List<string> protectedValues; 
 
         /// <summary>
         /// Encode object for serialization
